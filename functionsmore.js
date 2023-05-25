@@ -14,3 +14,17 @@ function myName(){
     console.log("Miriam")
 }
 myName();
+
+/*Interestingly, you can write function declarations after you call them, for example*/
+
+seeNow();
+function seeNow(){
+    console.log("You see, this is possible");
+}
+
+/*Functions can be passed arguments, given default arguments and so on*/
+
+function weekDays(day1="Monday", day2="Tuesday"){
+    console.log(`${day1} and ${day2} are days of the week`);
+}
+weekDays("Thursday", "Friday");
