@@ -35,3 +35,21 @@ function distanceFromHqInFeet(feet){
 const myResult = distanceFromHqInFeet(43)
 console.log(myResult);
 
+/*Customers want Scuber to calculate the number of feet travelled based on the distance. 
+Write a function called "distanceTravelledInFeet" that takes in both the start and destination
+blocks, and returns the number of feet travelled. Remember, each block in Manhattan is 264 feet long.
+For example distanceTravelledInFeet(34,38) representing 34th St to 38th St, returns 1056((38-34) * 264)
+You can assume that we are only calculating distance uptown/downtown, not from river to river.*/
+
+function distanceTravelledInFeet(start, destination){
+    if(start > destination){
+        return (start - destination) * 264;
+    }
+
+    else if (start < destination){
+        return (destination - start) * 264;
+    }
+}
+
+const myDistance = distanceTravelledInFeet(34, 38);
+console.log(myDistance);
