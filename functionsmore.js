@@ -84,3 +84,10 @@ myFunction();
 (function(thisNumber) {
     return thisNumber + 3;
 })(2);
+
+//DEFINE FUNCTION-LEVEL SCOPE
+// JavaScript exhibits function-Level Scope which means that if a function
+// is defined inside another function, the inner function has access to all 
+// the parameters of as well as any variables defined in the outer function
+// and this works recursively through scope chain.
+
